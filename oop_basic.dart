@@ -15,17 +15,17 @@
 //     student1.study();   
 // }
 
-class student {
-    String name;
-    int age;
+class std {
+    String? name;
+    int? age;
 
-    student(this.name,this.age);
+    std(this.name,this.age);
 }
 
 void main(){
-    student s1 = student("ashmil",18);
-    student s2 = student("riswan",19);
-    student s3 = student("jihan",50);
+    std s1 = std("ashmil",18);
+    std s2 = std("riswan",19);
+    std s3 = std("jihan",50);
 
     print("name: ${s1.name}, age: ${s1.age}");
     print("name: ${s2.name}, age: ${s2.age}");
