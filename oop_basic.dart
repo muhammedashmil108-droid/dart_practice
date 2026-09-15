@@ -33,14 +33,30 @@
 // }
 
 
-class student {
-    String? name;
-    int? age;
+// class student {
+//     String? name;
+//     int? age;
 
-    student(this.name,this.age);
+//     student(this.name,this.age);
+// }
+// void main(){
+//     student std=student("ashmil",18);
+//     print(std.name);
+//     print(std.age);
+// }
+
+class stud{
+    String ? name;
+    int ? age;
+
+
+    void stud.study(){
+name="ashmil";
+age=18;
+    }
 }
-void main(){
-    student std=student("ashmil",18);
-    print(std.name);
-    print(std.age);
+void add(){
+    stud result=stud();
+    print("Name: ${result.name}");
+    print("Age: ${result.age}");
 }
