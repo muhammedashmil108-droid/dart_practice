@@ -1,43 +1,52 @@
-class BankAccount {
-  String _owner;
-  double _balance;
 
-  BankAccount(this._owner, this._balance);
-
-  String get owner {
-    return _owner;
-  }
-
-  double get balance {
-    return _balance;
-  }
-
-  void deposit(double amount) {
-    if (amount > 0) {
-      _balance += amount;
+// polymorphism
+class Animal{
+    void sound(){
+        print("Animal makes a sound");
     }
-  }
-
-  void withdraw(double amount) {
-    if (amount > 0 && amount <= _balance) {
-      _balance -= amount;
-    } else {
-      print("Invalid withdrawal");
-    }
-  }
 }
 
-void main() {
-  BankAccount account = BankAccount("Ashmil", 10000);
+    class Dog extends Animal{
+        @override
+        void sound(){
+            print("Dog barks");
+        }
+    }
 
-  print(account.owner);
-  print(account.balance);
+    class Cat extends Animal{
+        @override
+        void sound(){
+            print("Cat meows");
+        }
+    }
 
-  account.deposit(5000);
-  print(account.balance);
+    void main(){
 
-  account.withdraw(2000);
-  print(account.balance);
+
+        Dog dog=Dog();
+        Cat cat=Cat();
+
+        dog.sound();
+        cat.sound();
+        greet();
+    }
+
+// abstract
+abstract class Human{
+    void walk(){
+        print("Human can walk");
+    }
+}
+
+class Ashmil extends Human{
+    void walk(){
+        print("Ashmil can walk");
+    }
+}
+
+ greet(){
+    Ashmil anu=Ashmil();
+    anu.walk();
 }
 
 
