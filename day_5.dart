@@ -20,6 +20,7 @@ void main(){
 
     std.display();
     add();
+    about();
 }
 
 // method override
@@ -40,4 +41,22 @@ class Who extends Person{
 void add(){
     Who w=Who();
     w.greet();
+}
+
+// inheritance
+class Vehicle{
+    void start(){
+        print("vehicle started");
+    }
+    }
+
+class Car extends Vehicle{
+    void where(){
+        print("car is running");
+    }
+}
+void about(){
+    Car c=Car();
+    c.start();
+    c.where();
 }
