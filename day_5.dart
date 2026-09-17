@@ -1,4 +1,6 @@
-class Student {
+// class/model creation 
+ 
+ class Student {
     String name;
     int age;
     String course;
@@ -17,4 +19,25 @@ void main(){
     Student std=Student("ashmil",18,"flutter developer");
 
     std.display();
+    add();
+}
+
+// method override
+
+class Person{
+    @override
+    void greet(){
+        print("Hello ashmil");
+    }
+}
+class Who extends Person{
+  
+    void greet(){
+        print("Hello riswan");
+    }
+}
+
+void add(){
+    Who w=Who();
+    w.greet();
 }
