@@ -1,53 +1,50 @@
-class Bankaccount {
-   int accountnumber;
-   String accountHoldername;
-   double balance;
 
 
-   Bankaccount(this.accountnumber,this.accountHoldername,this.balance); 
+class Employee {
+  String _name;
+  double _salary;
 
-   void deposit(double amount){
+  Employee(this._name, this._salary);
 
-    balance+=amount;
-    print("rupees $amount deposited successfully");
-   }
+  // Getter for name
+  String get name {
+    return _name;
+  }
 
+  // Setter for name
+  set name(String value) {
+    _name = value;
+  }
 
-   void withdraw(double amount){
-    if(amount<=balance){
-        balance-=amount;
-        print("rupees $amount withdrawn successfully");
-    }else{
-        print("insufficient balance");
+  // Getter for salary
+  double get salary {
+    return _salary;
+  }
+
+  // Setter for salary
+  set salary(double value) {
+    if (value >= 0) {
+      _salary = value;
+    } else {
+      print("Salary cannot be negative");
     }
+  }
 
-   }
-   double get currentBalance{
-    return balance;
-   }
-
-
-   void displayDetails(){
-    print("Account number: $accountnumber");
-    print("Account holder: $accountHoldername");
-    print("Current balance: rupees$balance");
-
-   }
+  void displayDetails() {
+    print("Name: $_name");
+    print("Salary: $_salary");
+  }
 }
 
-void main(){
-    Bankaccount account = Bankaccount(123456, "ashmil", 100000.0);
+void main() {
+  Employee employee = Employee("Ashmil", 25000);
 
+  employee.displayDetails();
 
-    account.displayDetails();
+  employee.salary = 30000;
 
-    account.deposit(2000);
+  print("After updating salary:");
+  employee.displayDetails();
 
-    account.withdraw(1500);
-
-    print("Current balance: rupees${account.currentBalance}");
-
-    account.withdraw(10000);
-
-    account.displayDetails();
+  employee.salary = -5000;
 }
