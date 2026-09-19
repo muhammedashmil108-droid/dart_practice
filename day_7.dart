@@ -5,7 +5,10 @@
 void main(){
     add();
    clss();
-
+   clsss();
+   para();
+   just();
+   vehicle();
 }
 
 void add(){
@@ -97,3 +100,66 @@ void clss(){
     print(student.howBalance);
 
 }
+
+
+// constructor
+
+class Iam{
+    String? currectname="ashmil";
+    int? currectage=18;
+
+    Iam();
+}
+
+void clsss(){
+    Iam iam=Iam();
+
+    print(iam.currectname);
+    print(iam.currectage);
+}
+// parameterized
+class  You{
+    String? howtomove;
+    int? howoldareyou;
+
+    You(this.howtomove,this.howoldareyou);
+}
+void para(){
+    You you=You("by my experence",18);
+
+    print(you.howtomove);
+    print(you.howoldareyou);
+}
+
+// named 
+class Studentss{
+    String? peerh;
+    int? vayas;
+
+  
+
+   Studentss.guest(){
+    peerh="ashmil";
+    vayas=18;
+   }
+}
+void just(){
+    Studentss std=Studentss.guest();
+    print(std.peerh);
+    print(std.vayas);
+}
+// constant
+class Car{
+final String? carname;
+final int? carprice;
+
+const Car(this.carname,this.carprice);
+}
+
+void vehicle(){
+    Car car=Car("Bwm",10000000000000);
+
+    print(car.carname);
+    print(car.carprice);
+}
+
