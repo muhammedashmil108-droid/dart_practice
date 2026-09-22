@@ -1,6 +1,7 @@
 void main(){
 q1();
 q2();
+ q3();
 
 }
 
@@ -40,4 +41,30 @@ print(std1.name);
 print(std1.age);
 print(std2.name);
 print(std2.age);
+} 
+
+class Payment{
+    double? amount;
+    Payment(this.amount);
+    void pay(){
+
+    }
+}
+class UPIPayment extends Payment{
+    String? upiId="";
+    UPIPayment(double amount,this.upiId):super(amount);
+    @override
+    void pay(){
+
+    
+}
+void displaydetails(){
+    print("payment amount: $amount");
+    print("upiId : $upiId");
+}
+}
+q3(){
+    UPIPayment upi=UPIPayment(200000,"ashmil@123");
+    upi.pay();
+    upi.displaydetails();
 }
