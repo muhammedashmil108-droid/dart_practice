@@ -2,6 +2,7 @@ void main(){
 q1();
 q2();
  q3();
+ q4();
 
 }
 
@@ -67,4 +68,17 @@ q3(){
     UPIPayment upi=UPIPayment(200000,"ashmil@123");
     upi.pay();
     upi.displaydetails();
+}
+abstract class Animal{
+    void sound();
+}
+class Dog extends Animal {
+    @override
+    void sound(){
+        print("Dog barks");
+    }
+}
+q4(){
+    Dog obj=Dog();
+    obj.sound();
 }
