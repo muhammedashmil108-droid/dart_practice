@@ -4,6 +4,7 @@ q2();
  q3();
  q4();
 q5();
+q6();
 }
 
 class Car{
@@ -107,3 +108,20 @@ q5(){
 
 // INheritance
 
+class Anima{
+    void eat(){
+        print("eating");
+
+    }
+}
+
+class Rat extends Anima{
+    void noise(){
+        print("rat making noise");
+    }
+}
+q6(){
+    Rat rat=Rat();
+    rat.eat();
+    rat.noise();
+}
