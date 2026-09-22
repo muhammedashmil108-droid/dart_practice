@@ -3,7 +3,7 @@ q1();
 q2();
  q3();
  q4();
-
+q5();
 }
 
 class Car{
@@ -69,16 +69,41 @@ q3(){
     upi.pay();
     upi.displaydetails();
 }
+
+
+// ABSTRACTION
 abstract class Animal{
     void sound();
 }
-class Dog extends Animal {
+class Dog extends Animal{
     @override
     void sound(){
-        print("Dog barks");
+        print("Dog barking");
     }
 }
 q4(){
-    Dog obj=Dog();
-    obj.sound();
+    Dog dog=Dog();
+    dog.sound();
 }
+
+// POLYMORPHYSUM
+
+class Mrikam{
+    void ocha(){
+        print("mrikam ochapedthunnu");
+    
+    }
+}
+class Cat extends Mrikam{
+    @override 
+    void ocha(){
+        print("Cat meowwhh");
+    }
+}
+q5(){
+    Cat cat=Cat();
+    cat.ocha();
+}
+
+// INheritance
+
