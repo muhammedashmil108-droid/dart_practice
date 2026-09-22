@@ -5,6 +5,7 @@ q2();
  q4();
 q5();
 q6();
+q7();
 }
 
 class Car{
@@ -125,3 +126,20 @@ q6(){
     rat.eat();
     rat.noise();
 }
+
+// encapsulation
+class Childrens{
+  String _name = "";
+   void setName(String name) {   
+     _name = name;
+     
+       } 
+        String getName() {
+                return _name;  
+                }
+                 }
+q7() {
+      Childrens obj = Childrens(); 
+       obj.setName("John"); 
+        print(obj.getName()); 
+        }
