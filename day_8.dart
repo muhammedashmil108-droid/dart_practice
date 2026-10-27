@@ -1,11 +1,12 @@
 void main(){
 q1();
 q2();
- q3();
+
  q4();
 q5();
 q6();
 q7();
+q8();
 }
 
 class Car{
@@ -46,31 +47,7 @@ print(std2.name);
 print(std2.age);
 } 
 
-class Payment{
-    double? amount;
-    Payment(this.amount);
-    void pay(){
 
-    }
-}
-class UPIPayment extends Payment{
-    String? upiId="";
-    UPIPayment(double amount,this.upiId):super(amount);
-    @override
-    void pay(){
-
-    
-}
-void displaydetails(){
-    print("payment amount: $amount");
-    print("upiId : $upiId");
-}
-}
-q3(){
-    UPIPayment upi=UPIPayment(200000,"ashmil@123");
-    upi.pay();
-    upi.displaydetails();
-}
 
 
 // ABSTRACTION
@@ -90,13 +67,13 @@ q4(){
 
 // POLYMORPHYSUM
 
-class Mrikam{
+class Mrika{
     void ocha(){
         print("mrikam ochapedthunnu");
     
     }
 }
-class Cat extends Mrikam{
+class Cat extends Mrika{
     @override 
     void ocha(){
         print("Cat meowwhh");
@@ -142,4 +119,15 @@ q7() {
       Childrens obj = Childrens(); 
        obj.setName("John"); 
         print(obj.getName()); 
-        }
+}
+class Payment{
+    double? amount;
+    Payment(this.amount);
+    void pay(){
+
+    }
+}
+class UPIPayment extends Payment{
+    String? upiId="";
+    UPIPayment(double amount,this.upi)
+}

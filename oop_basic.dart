@@ -1,4 +1,3 @@
-
 // class student {
 //     String name="ashmil";
 //     int age=18;
@@ -12,7 +11,7 @@
 //     student student1=student();
 //     print("Name: ${student1.name}");
 //     print("Age: ${student1.age}");
-//     student1.study();   
+//     student1.study();
 // }
 
 // class std {
@@ -29,9 +28,8 @@
 
 //     print("name: ${s1.name}, age: ${s1.age}");
 //     print("name: ${s2.name}, age: ${s2.age}");
-//     print("name: ${s3.name}, age: ${s3.age}");  
+//     print("name: ${s3.name}, age: ${s3.age}");
 // }
-
 
 // class student {
 //     String? name;
@@ -45,18 +43,13 @@
 //     print(std.age);
 // }
 
-class stud{
-    String ? name;
-    int ? age;
-
-
-    void stud.study(){
-name="ashmil";
-age=18;
-    }
+class stud {
+  String? name;
+  int? age;
 }
-void add(){
-    stud result=stud();
-    print("Name: ${result.name}");
-    print("Age: ${result.age}");
+
+void add() {
+  stud result = stud();
+  print("Name: ${result.name}");
+  print("Age: ${result.age}");
 }
